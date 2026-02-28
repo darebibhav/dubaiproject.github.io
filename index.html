@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR Consultancy | UAE Business Setup</title>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Tailwind CSS for quick styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* Hide scrollbar but keep functionality */
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- MAIN CONTAINER -->
+    <div id="root" class="min-h-screen bg-gray-50 font-sans antialiased overflow-x-hidden">
+        
+        <!-- ========== NAVIGATION BAR ========== -->
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-gray-200/50 shadow-sm">
+            <div class="container mx-auto px-6 py-4">
+                <div class="flex justify-between items-center">
+                   <!-- Logo section with image -->
+<div class="flex items-center gap-3">
+    <img src="logo.png" alt="AR Consultancy Logo" class="w-10 h-10 rounded-xl object-cover">
+    <div>
+        <div class="font-bold text-2xl tracking-tight text-blue-900">AR CONSULTANCY</div>
+        <div class="text-xs text-gray-500 -mt-1">Business Setup</div>
+    </div>
+</div>
+                    
+                    <!-- Navigation links (desktop) -->
+                    <div class="md:flex items-center gap-8 text-sm font-medium">
+                        <button class="nav-link hover:text-blue-700 transition" data-section="services">Services</button>
+                        <button class="nav-link hover:text-blue-700 transition" data-section="packages">Packages</button>
+                        <button class="nav-link hover:text-blue-700 transition" data-section="steps">How it Works</button>
+                        <button class="nav-link hover:text-blue-700 transition" data-section="why">Why Us</button>
+                    </div>
+                    
+                    <!-- Right side: CTA Button and Mobile Menu -->
+                    <div class="flex items-center gap-2">
+                        <!-- CTA Button -->
+                        <button class="open-start-model bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold text-sm transition whitespace-nowrap">
+                            Get Free Consultation
+                        </button>
+                        
+                        <!-- Mobile menu button (visible on mobile) -->
+                        <button id="mobile-menu-button" class="md:hidden text-2xl text-gray-700 hover:text-blue-700">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Dropdown (hidden by default) -->
+                <div id="mobile-menu" class="hidden md:hidden mt-4 pt-4 border-t border-gray-200">
+                    <div class="flex flex-col gap-3">
+                        <button class="nav-link text-left py-2 hover:text-blue-700 transition" data-section="services">Services</button>
+                        <button class="nav-link text-left py-2 hover:text-blue-700 transition" data-section="packages">Packages</button>
+                        <button class="nav-link text-left py-2 hover:text-blue-700 transition" data-section="steps">How it Works</button>
+                        <button class="nav-link text-left py-2 hover:text-blue-700 transition" data-section="why">Why Us</button>
+                        <button class="open-start-model bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold text-sm transition w-full mt-2">
+                            Get Free Consultation
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- ========== HERO SECTION ========== -->
+        <header id="hero" class="min-h-screen bg-cover bg-center bg-fixed relative flex items-center justify-center" 
+                style="background-image: url('https://images.pexels.com/photos/5686514/pexels-photo-5686514.jpeg?auto=compress&cs=tinysrgb&w=1920');">
+            <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
+            
+            <div class="container mx-auto px-6 relative z-10 text-center text-white pt-20">
+                <div class="max-w-4xl mx-auto">
+                    <div class="text-yellow-500 md:text-6xl font-semibold tracking-wider mb-4">
+                        <i class="fas fa-flag mr-2"></i>YOUR TRUSTED PARTNER FOR
+                    </div>
+                    
+                    <h1 class="text-6xl md:text-7xl font-extrabold tracking-tighter leading-none mb-4">SETUP YOUR BUSINESS</h1>
+                    <h2 class="text-5xl md:text-6xl font-bold mb-6">IN UAE</h2>
+                    
+                    <!-- <div class="inline-block bg-white/20 backdrop-blur-md px-8 py-4 rounded-full text-4xl font-bold mb-8 border border-white/30">
+                        <span class="line-through text-2xl text-gray-300 mr-4">AED 12,999</span> AED 5,750
+                    </div> -->
+                    
+                    <div class="flex flex-wrap justify-center gap-4 text-lg md:text-xl mb-10">
+                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl">
+                            <span class="text-3xl mr-3">✅</span>
+                            <span class="font-medium">Trade License</span>
+                        </div>
+                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl">
+                            <span class="text-3xl mr-3">✅</span>
+                            <span class="font-medium">100% Ownership</span>
+                        </div>
+                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl">
+                            <span class="text-3xl mr-3">✅</span>
+                            <span class="font-medium">Affordable Cost</span>
+                        </div>
+                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl">
+                            <span class="text-3xl mr-3">✅</span>
+                            <span class="font-medium">Corporate Tax Benefit</span>
+                        </div>
+                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl">
+                            <span class="text-3xl mr-3">✅</span>
+                            <span class="font-medium">Free Consultation</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                        <button class="open-start-model bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold text-2xl px-12 py-6 rounded-2xl shadow-2xl hover:scale-105 transition transform">
+                            Start Now!
+                        </button>
+                    </div>
+                    
+                    <div class="mt-6 text-sm font-medium flex justify-center items-center gap-2">
+                        <i class="fas fa-lock text-green-400"></i> 
+                        Free Consultation · <span class="text-green-400">100% Privacy Guaranteed</span>
+                    </div>
+                    
+                    <div class="mt-16 animate-bounce text-4xl">↓</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== WHY UAE - HORIZONTAL SCROLLING CARDS (ONLY ONE SECTION) ========== -->
+        <section class="py-20 bg-gradient-to-b from-white to-blue-50">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <div class="text-center max-w-4xl mx-auto mb-16">
+                    <h2 class="text-5xl md:text-6xl font-bold text-blue-900 mb-6">Why Setup a Business in UAE</h2>
+                    <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+                        At AR Consultancy, we handle all the documentation, from start to finish, ensuring that your paperwork is completed accurately and efficiently.
+                    </p>
+                </div>
+                
+                <!-- Horizontal Scrolling Container -->
+                <div class="relative">
+                    <!-- Left Scroll Button -->
+                    <button id="scroll-left" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 -ml-4 md:block hover:bg-blue-100">
+                        <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Right Scroll Button -->
+                    <button id="scroll-right" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 -mr-4 md:block hover:bg-blue-100">
+                        <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                    
+                    <!-- Horizontal Scrolling Cards -->
+                    <div id="horizontal-scroll" class="flex overflow-x-auto gap-6 pb-8 px-2 hide-scrollbar" style="scroll-behavior: smooth; -webkit-overflow-scrolling: touch;">
+                        
+                        <!-- Card 1: No Physical Presence Required -->
+                        <div class="flex-none w-80 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 transform hover:-translate-y-2">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-blue-900 mb-3">No Physical Presence Required</h3>
+                            <p class="text-gray-600 mb-6">Set up your business remotely without needing to be physically present.</p>
+                            <button class="open-start-model inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 group">
+                                Get In Touch
+                                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Card 2: 100% Control Of Your Business -->
+                        <div class="flex-none w-80 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 transform hover:-translate-y-2">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-blue-900 mb-3">100% Control Of Your Business</h3>
+                            <p class="text-gray-600 mb-6">Full control without needing a local partner in most sectors.</p>
+                            <button class="open-start-model inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 group">
+                                Get In Touch
+                                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Card 3: Get Access To A Global Market -->
+                        <div class="flex-none w-80 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 transform hover:-translate-y-2">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-blue-900 mb-3">Get Access To A Global Market</h3>
+                            <p class="text-gray-600 mb-6">Strategic location connecting Europe, Asia, and Africa for international trade.</p>
+                            <button class="open-start-model inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 group">
+                                Get In Touch
+                                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Card 4: Complete Confidentiality & Privacy Assured -->
+                        <div class="flex-none w-80 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 transform hover:-translate-y-2">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-blue-900 mb-3">Complete Confidentiality & Privacy Assured</h3>
+                            <p class="text-gray-600 mb-6">Strong legal protections for business and personal information.</p>
+                            <button class="open-start-model inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 group">
+                                Get In Touch
+                                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Card 5: Fast Company Setup -->
+                        <div class="flex-none w-80 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 transform hover:-translate-y-2">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-blue-900 mb-3">Fast Company Setup</h3>
+                            <p class="text-gray-600 mb-6">Quick and efficient business registration in many free zones.</p>
+                            <button class="open-start-model inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 group">
+                                Get In Touch
+                                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <!-- Card 6: Business-Friendly Tax Regimes -->
+                        <div class="flex-none w-80 bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 transform hover:-translate-y-2">
+                            <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-blue-900 mb-3">Business-Friendly Tax Regimes</h3>
+                            <p class="text-gray-600 mb-6">No corporate or personal income taxes in most free zones (where applicable)</p>
+                            <button class="open-start-model inline-flex items-center text-blue-600 font-semibold hover:text-blue-700 group">
+                                Get In Touch
+                                <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicators (dots) for mobile -->
+                <div class="flex justify-center gap-2 mt-6 md:hidden">
+                    <span class="w-2 h-2 bg-blue-300 rounded-full"></span>
+                    <span class="w-2 h-2 bg-blue-300 rounded-full"></span>
+                    <span class="w-2 h-2 bg-blue-300 rounded-full"></span>
+                    <span class="w-2 h-2 bg-blue-300 rounded-full"></span>
+                    <span class="w-2 h-2 bg-blue-300 rounded-full"></span>
+                    <span class="w-2 h-2 bg-blue-300 rounded-full"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll Buttons JavaScript -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const scrollContainer = document.getElementById('horizontal-scroll');
+                const scrollLeftBtn = document.getElementById('scroll-left');
+                const scrollRightBtn = document.getElementById('scroll-right');
+                
+                if (scrollLeftBtn && scrollRightBtn && scrollContainer) {
+                    const scrollAmount = 336; // Width of one card + gap
+                    
+                    scrollLeftBtn.addEventListener('click', function() {
+                        scrollContainer.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                    });
+                    
+                    scrollRightBtn.addEventListener('click', function() {
+                        scrollContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    });
+                    
+                    const checkScrollButtons = function() {
+                        // Left button
+                        if (scrollContainer.scrollLeft <= 10) {
+                            scrollLeftBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                            scrollLeftBtn.disabled = true;
+                        } else {
+                            scrollLeftBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                            scrollLeftBtn.disabled = false;
+                        }
+                        
+                        // Right button
+                        if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth - 10) {
+                            scrollRightBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                            scrollRightBtn.disabled = true;
+                        } else {
+                            scrollRightBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                            scrollRightBtn.disabled = false;
+                        }
+                    };
+                    
+                    scrollContainer.addEventListener('scroll', checkScrollButtons);
+                    window.addEventListener('resize', checkScrollButtons);
+                    checkScrollButtons();
+                }
+            });
+        </script>
+
+        <!-- ========== SERVICES SECTION ========== -->
+        <section id="services" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-bold text-center text-blue-900 mb-16">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="group bg-yellow-200 rounded-3xl p-10 shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-blue-200">
+                        <div class="text-6xl mb-6">🏢</div>
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Business Setup</h3>
+                        <button class="open-start-model text-blue-700 group-hover:text-blue-800 font-semibold flex items-center gap-2 mt-4">
+                            Enquire Now →
+                        </button>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="group bg-yellow-200 rounded-3xl p-10 shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-blue-200">
+                        <div class="text-6xl mb-6">🪪</div>
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Golden Visa</h3>
+                        <button class="open-start-model text-blue-700 group-hover:text-blue-800 font-semibold flex items-center gap-2 mt-4">
+                            Enquire Now →
+                        </button>
+                    </div>
+                    
+                    <!-- Service Card 3 -->
+                    <div class="group bg-yellow-200 rounded-3xl p-10 shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-blue-200">
+                        <div class="text-6xl mb-6">🏦</div>
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Corporate Bank Accounts</h3>
+                        <button class="open-start-model text-blue-700 group-hover:text-blue-800 font-semibold flex items-center gap-2 mt-4">
+                            Enquire Now →
+                        </button>
+                    </div>
+                    
+                    <!-- Service Card 4 -->
+                    <div class="group bg-yellow-200 rounded-3xl p-10 shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-blue-200">
+                        <div class="text-6xl mb-6">📜</div>
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">License & Registration</h3>
+                        <button class="open-start-model text-blue-700 group-hover:text-blue-800 font-semibold flex items-center gap-2 mt-4">
+                            Enquire Now →
+                        </button>
+                    </div>
+                    
+                    <!-- Service Card 5 -->
+                    <div class="group bg-yellow-200 rounded-3xl p-10 shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-blue-200">
+                        <div class="text-6xl mb-6">📊</div>
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">Accounting & Auditing</h3>
+                        <button class="open-start-model text-blue-700 group-hover:text-blue-800 font-semibold flex items-center gap-2 mt-4">
+                            Enquire Now →
+                        </button>
+                    </div>
+                    
+                    <!-- Service Card 6 -->
+                    <div class="group bg-yellow-200 rounded-3xl p-10 shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-transparent hover:border-blue-200">
+                        <div class="text-6xl mb-6">💼</div>
+                        <h3 class="text-2xl font-bold text-blue-900 mb-4">VAT & Corporate Tax Advisory</h3>
+                        <button class="open-start-model text-blue-700 group-hover:text-blue-800 font-semibold flex items-center gap-2 mt-4">
+                            Enquire Now →
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 3 STEPS SECTION ========== -->
+        <section id="steps" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-5xl font-bold text-blue-900 mb-6">You Are Just 3 Easy Steps Away</h2>
+                <p class="text-2xl text-gray-600 mb-16">To Start Your Business in UAE!</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+                    <!-- Step 1 -->
+                    <div class="bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
+                        <img alt="Choose The Right Business Activity" class="w-full h-56 object-cover" 
+                             src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=600">
+                        <div class="p-8">
+                            <div class="inline-block bg-blue-700 text-white w-12 h-12 rounded-2xl flex items-center justify-center text-3xl font-bold mb-4">01</div>
+                            <h3 class="text-2xl font-bold text-blue-900">Choose The Right Business Activity</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
+                        <img alt="Get Your Business License" class="w-full h-56 object-cover" 
+                             src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600">
+                        <div class="p-8">
+                            <div class="inline-block bg-blue-700 text-white w-12 h-12 rounded-2xl flex items-center justify-center text-3xl font-bold mb-4">02</div>
+                            <h3 class="text-2xl font-bold text-blue-900">Get Your Business License</h3>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="bg-white border border-gray-100 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow">
+                        <img alt="Open Bank Account" class="w-full h-56 object-cover" 
+                             src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600">
+                        <div class="p-8">
+                            <div class="inline-block bg-blue-700 text-white w-12 h-12 rounded-2xl flex items-center justify-center text-3xl font-bold mb-4">03</div>
+                            <h3 class="text-2xl font-bold text-blue-900">Open Bank Account</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PACKAGES SECTION ========== -->
+        <section id="packages" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-bold text-center text-blue-900 mb-6">Our Exclusive Packages</h2>
+                <p class="text-center text-xl text-gray-600 mb-16">Limited Time Offer – Valid This Month</p>
+                
+                <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                    <!-- Package 1: Best Seller -->
+                    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border-2 border-yellow-400 relative">
+                        <div class="absolute top-6 right-6 bg-yellow-400 text-blue-900 font-bold px-6 py-2 rounded-full text-sm">BEST SELLER</div>
+                        <img alt="E-commerce" class="w-full h-64 object-cover" 
+                             src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=600">
+                        <div class="p-10">
+                            <h3 class="text-4xl font-bold text-blue-900">E-Commerce License</h3>
+                            <div class="text-6xl font-extrabold text-blue-700 mt-3">118900 INR</div>
+                            <ul class="space-y-4 mt-8 text-lg">
+                                <li class="flex items-center gap-3"><span class="text-green-500 text-2xl">✔</span> Trade License</li>
+                                <li class="flex items-center gap-3"><span class="text-green-500 text-2xl">✔</span> 5 Media Activities</li>
+                                <li class="flex items-center gap-3"><span class="text-green-500 text-2xl">✔</span> Upgrade to unlimited visas</li>
+                                <li class="flex items-center gap-3"><span class="text-green-500 text-2xl">✔</span> Free Digital Bank Account</li>
+                                <li class="flex items-center gap-3"><span class="text-green-500 text-2xl">✔</span> Free Lease Agreement</li>
+                            </ul>
+                            <button class="open-start-model mt-10 w-full bg-green-600 hover:bg-green-700 py-6 text-white font-bold text-2xl rounded-2xl transition">
+                                Enquire Now
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Package 2: General Trading -->
+                    <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
+                        <img alt="General Trading" class="w-full h-64 object-cover" 
+                             src="https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=600">
+                        <div class="p-10">
+                            <h3 class="text-4xl font-bold text-blue-900">General Trading + Ecommerce</h3>
+                            <div class="text-6xl font-extrabold text-blue-700 mt-3">268000 INR <span class="text-xl font-normal">Upfront</span></div>
+                            <ul class="space-y-4 mt-8 text-lg">
+                                <li class="flex items-center gap-3"><span class="text-green-500 text-2xl">✔</span> Trade License</li>
+                                <li class="flex items-center gap-3"><span class="text-green-500 text-2xl">✔</span> PDC After 180 Days</li>
+                                <li class="flex items-center gap-3"><span class="text-green-500 text-2xl">✔</span> One Free Investor Visa</li>
+                                <li class="flex items-center gap-3"><span class="text-green-500 text-2xl">✔</span> Free Digital Bank Account</li>
+                                <li class="flex items-center gap-3"><span class="text-green-500 text-2xl">✔</span> Unlimited Co-Working Space</li>
+                            </ul>
+                            <button class="open-start-model mt-10 w-full bg-green-600 hover:bg-green-700 py-6 text-white font-bold text-2xl rounded-2xl transition">
+                                Enquire Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== WHY CHOOSE US ========== -->
+        <section id="why" class="py-20 bg-blue-900 text-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-bold text-center mb-16">Why Choose AR Consultancy</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white/10 backdrop-blur p-8 rounded-3xl text-center hover:bg-white/20 transition">
+                        <div class="text-6xl mb-6">🎯</div>
+                        <h3 class="text-2xl font-bold mb-3">Expert Guidance</h3>
+                        <p class="text-lg opacity-90">Navigate UAE regulations with confidence</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur p-8 rounded-3xl text-center hover:bg-white/20 transition">
+                        <div class="text-6xl mb-6">🧩</div>
+                        <h3 class="text-2xl font-bold mb-3">Tailored Solutions</h3>
+                        <p class="text-lg opacity-90">Custom packages for every business type</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur p-8 rounded-3xl text-center hover:bg-white/20 transition">
+                        <div class="text-6xl mb-6">⚡</div>
+                        <h3 class="text-2xl font-bold mb-3">Lightning Fast</h3>
+                        <p class="text-lg opacity-90">Setup in as little as 3-7 days</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur p-8 rounded-3xl text-center hover:bg-white/20 transition">
+                        <div class="text-6xl mb-6">❤️</div>
+                        <h3 class="text-2xl font-bold mb-3">Dedicated Support</h3>
+                        <p class="text-lg opacity-90">Lifetime assistance after setup</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== TESTIMONIALS ========== -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-bold text-center mb-16">What Our Clients Say</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-3xl">
+                        <div class="text-yellow-400 text-4xl mb-4">★★★★★</div>
+                        <p class="italic text-lg mb-6">"Got my license in 5 days! Best decision ever."</p>
+                        <div>
+                            <p class="font-semibold">Ahmed Al-Mansouri</p>
+                            <p class="text-sm text-gray-500">E-commerce Founder</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-3xl">
+                        <div class="text-yellow-400 text-4xl mb-4">★★★★★</div>
+                        <p class="italic text-lg mb-6">"Professional team, zero hassle. Highly recommended!"</p>
+                        <div>
+                            <p class="font-semibold">Priya Sharma</p>
+                            <p class="text-sm text-gray-500">General Trading</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-8 rounded-3xl">
+                        <div class="text-yellow-400 text-4xl mb-4">★★★★★</div>
+                        <p class="italic text-lg mb-6">"The free bank account setup was a game changer."</p>
+                        <div>
+                            <p class="font-semibold">Omar Hassan</p>
+                            <p class="text-sm text-gray-500">Freelancer → Company Owner</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CTA BANNER ========== -->
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 py-20 text-white text-center">
+            <div class="container mx-auto px-6">
+                <h2 class="text-5xl font-bold mb-6">Ready to Launch Your UAE Business?</h2>
+                <p class="text-2xl mb-10">Speak to an expert in the next 60 seconds</p>
+                <button class="open-start-model bg-yellow-400 text-blue-950 hover:bg-yellow-300 text-3xl font-bold px-16 py-8 rounded-3xl shadow-2xl hover:scale-105 transition">
+                    Request Callback Now – It's Free!
+                </button>
+            </div>
+        </div>
+
+               <!-- ========== FOOTER ========== -->
+        <footer class="bg-gradient-to-b from-gray-900 to-black text-gray-300">
+            <div class="container mx-auto px-6 pt-12 pb-8">
+                <!-- Google Maps Embed -->
+                <div class="rounded-2xl overflow-hidden border border-gray-700/50 shadow-2xl mb-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178580563664!2d55.27242031538777!3d25.19719798389658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff55e6bdb2f7633e!2sBusiness%20Bay%20-%20Dubai!5e0!3m2!1sen!2sae!4v1617712456789!5m2!1sen!2sae" 
+                            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                
+                <!-- Footer Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
+                    <!-- Column 1: Company Info - EXACTLY as in your screenshot -->
+                    <div>
+                        <div class="flex flex-col gap-4 mb-6">
+                             <img src="logo.png" alt="AR Consultancy Logo" class="w-10 h-10 rounded-xl object-cover">
+                            <div>
+                                <h3 class="text-2xl font-bold text-white tracking-tight">AR Consultancy Setup</h3>
+                                <p class="text-sm text-blue-400">Business Setup in UAE</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Helping entrepreneurs and businesses launch successfully in the UAE's free zones with fast, affordable, and fully compliant company formation.
+                        </p>
+                        <!-- Social Media Icons -->
+                        <div class="flex gap-5">
+                            <a href="#" class="text-gray-400 text-2xl transition hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-gray-400 text-2xl transition hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-gray-400 text-2xl transition hover:text-blue-400"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="text-gray-400 text-2xl transition hover:text-sky-400"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-gray-400 text-2xl transition hover:text-red-400"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Column 2: Quick Links -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-6">Quick Links</h4>
+                        <ul class="space-y-3">
+                            <li><button class="nav-link text-gray-400 hover:text-white transition" data-section="services">Business Setup</button></li>
+                            <li><button class="nav-link text-gray-400 hover:text-white transition" data-section="packages">Our Packages</button></li>
+                            <li><button class="nav-link text-gray-400 hover:text-white transition" data-section="steps">How It Works</button></li>
+                            <li><button class="nav-link text-gray-400 hover:text-white transition" data-section="why">Why Choose Us</button></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Golden Visa</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Bank Account Opening</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3: Contact Info -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-6">Contact Us</h4>
+                        <ul class="space-y-4 text-gray-400">
+                            <li class="flex items-start gap-3">
+                                <span class="text-blue-400 text-xl mt-1">📍</span>
+                                <span>Office 123, Business Bay<br>Dubai, United Arab Emirates</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-blue-400 text-xl">📞</span>
+                                <a href="tel:+971 50 123 4567" class="hover:text-white transition">+971 50 123 4567</a>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-blue-400 text-xl">✉️</span>
+                                <a href="mailto:bibhavpandey78@gmail.com" class="hover:text-white transition">bibhavpandey78@gmail.com</a>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="text-blue-400 text-xl">🕒</span>
+                                <span>Mon – Sat: 9:00 AM – 6:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 4: Newsletter -->
+                    <div>
+                        <h4 class="text-lg font-semibold text-white mb-6">Stay Updated</h4>
+                        <p class="text-gray-400 mb-4">Subscribe to get latest offers, UAE business updates & free guides.</p>
+                        <form class="space-y-3" id="newsletterForm">
+                            <input type="email" placeholder="Your email address" 
+                                   class="w-full px-5 py-4 bg-gray-800 border border-gray-700 rounded-xl focus:outline-none focus:border-blue-500 text-white placeholder-gray-500" 
+                                   required>
+                            <button type="submit" class="w-full bg-blue-700 hover:bg-blue-600 text-white font-semibold py-4 px-6 rounded-xl transition">
+                                Subscribe Now
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom - with AI copyright as in your screenshot -->
+            <div class="border-t border-gray-800">
+                <div class="container mx-auto px-6 py-6 text-center text-sm">
+                    <div class="flex flex-col gap-4">
+                        <p>© 2026 AI · Privacy Policy</p>
+                        <div class="flex gap-6 justify-center">
+                            <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                            <a href="#" class="hover:text-white transition">Terms of Service</a>
+                            <a href="#" class="hover:text-white transition">Refund Policy</a>
+                        </div>
+                        <p class="text-gray-500">Made with ❤️ in the UAE</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Floating WhatsApp Button -->
+        <a href="https://wa.me/971501234567" target="_blank" 
+            class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition text-4xl z-50">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- ========== POPUP MODAL ========== -->
+    <div id="start-modal" class="fixed inset-0 bg-black/60 z-[100] flex items-center justify-center hidden transition-opacity">
+        <div class="bg-white rounded-3xl w-full max-w-2xl p-10 relative shadow-2xl">
+            <button id="start-close" class="absolute top-5 right-6 text-gray-400 hover:text-gray-700 text-4xl">&times;</button>
+            
+            <h2 class="text-4xl font-bold text-center mb-2">Let's Get You Started</h2>
+            <p class="text-center text-gray-500 mb-8">Free consultation in under 60 seconds</p>
+            
+            <form id="consultForm" class="flex flex-col gap-5">
+                <input type="text" id="fullName" placeholder="Full Name" class="w-full p-4 border rounded-xl" required>
+                <input type="text" id="phoneNumber" placeholder="Phone Number (with WhatsApp)" class="w-full p-4 border rounded-xl" required>
+                <input type="email" id="emailAddress" placeholder="Email Address" class="w-full p-4 border rounded-xl" required>
+                <textarea id="businessType" placeholder="What type of business are you starting? (optional)" 
+                          class="w-full p-4 border rounded-xl h-32 resize-none"></textarea>
+                <button type="submit" class="w-full bg-blue-700 hover:bg-blue-800 text-white font-bold text-xl py-5 rounded-2xl">
+                    Submit & Get Callback
+                </button>
+            </form>
+            
+            <div id="form-feedback" class="mt-4 text-center text-sm font-medium text-green-600"></div>
+        </div>
+    </div>
+
+    <!-- JavaScript Files -->
+    <script src="script.js"></script>
+    <script src="connect-backend.js"></script>
+</body>
+</html>

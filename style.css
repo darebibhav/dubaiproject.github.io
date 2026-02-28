@@ -1,0 +1,77 @@
+/* ========== CUSTOM CSS STYLES ========== */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Modal visibility */
+.hidden {
+    display: none !important;
+}
+
+/* Prevent background scroll when modal is open */
+.overflow-hidden {
+    overflow: hidden;
+}
+
+/* Modal transition */
+.modal-transition {
+    transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+/* Custom animations */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Hover effects */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* Form input focus */
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    ring: 2px solid #3b82f6;
+    border-color: #3b82f6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem !important;
+    }
+    
+    h2 {
+        font-size: 2.5rem !important;
+    }
+    
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
