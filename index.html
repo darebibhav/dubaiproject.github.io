@@ -33,17 +33,17 @@
         <nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-gray-200/50 shadow-sm">
             <div class="container mx-auto px-6 py-4">
                 <div class="flex justify-between items-center">
-                   <!-- Logo section with image -->
-<div class="flex items-center gap-3">
-    <img src="logo.png" alt="AR Consultancy Logo" class="w-10 h-10 rounded-xl object-cover">
-    <div>
-        <div class="font-bold text-2xl tracking-tight text-blue-900">AR CONSULTANCY</div>
-        <div class="text-xs text-gray-500 -mt-1">Business Setup</div>
-    </div>
-</div>
+                    <!-- Logo section with image -->
+                    <div class="-mt-1.5 flex items-center gap-3">
+                        <img src="logo.png" alt="AR Consultancy Logo" class="w-10 h-10 rounded-xl object-cover">
+                        <div>
+                            <div class="font-bold text-xl tracking-tight text-blue-900 -mt-1 ">AR CONSULTANCY</div>
+                            <div class="text-xs text-gray-500 -mt-1">Business Setup</div>
+                        </div>
+                    </div>
                     
-                    <!-- Navigation links (desktop) -->
-                    <div class="md:flex items-center gap-8 text-sm font-medium">
+                    <!-- Navigation links (desktop) - FIXED: Added hidden class -->
+                    <div class="hidden md:flex items-center gap-8 text-sm font-medium">
                         <button class="nav-link hover:text-blue-700 transition" data-section="services">Services</button>
                         <button class="nav-link hover:text-blue-700 transition" data-section="packages">Packages</button>
                         <button class="nav-link hover:text-blue-700 transition" data-section="steps">How it Works</button>
@@ -53,7 +53,7 @@
                     <!-- Right side: CTA Button and Mobile Menu -->
                     <div class="flex items-center gap-2">
                         <!-- CTA Button -->
-                        <button class="open-start-model bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-full font-semibold text-sm transition whitespace-nowrap">
+                        <button class="open-start-model bg-blue-700 hover:bg-blue-800 text-white px-2.5 py-1.5 rounded-full font-semibold text-sm transition whitespace-nowrap">
                             Get Free Consultation
                         </button>
                         
@@ -98,30 +98,30 @@
                     </div> -->
                     
                     <div class="flex flex-wrap justify-center gap-4 text-lg md:text-xl mb-10">
-                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl">
+                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-2 rounded-2xl">
                             <span class="text-3xl mr-3">✅</span>
                             <span class="font-medium">Trade License</span>
                         </div>
-                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl">
-                            <span class="text-3xl mr-3">✅</span>
+                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-2 rounded-2xl">
+                            <span class="text-3xl mr-2">✅</span>
                             <span class="font-medium">100% Ownership</span>
                         </div>
-                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl">
+                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-2 rounded-2xl">
                             <span class="text-3xl mr-3">✅</span>
                             <span class="font-medium">Affordable Cost</span>
                         </div>
-                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl">
-                            <span class="text-3xl mr-3">✅</span>
+                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-2 rounded-2xl">
+                            <span class="text-3xl mr-2">✅</span>
                             <span class="font-medium">Corporate Tax Benefit</span>
                         </div>
-                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-3 rounded-2xl">
+                        <div class="flex items-center bg-white/10 backdrop-blur-md px-6 py-2 rounded-2xl">
                             <span class="text-3xl mr-3">✅</span>
                             <span class="font-medium">Free Consultation</span>
                         </div>
                     </div>
 
                     <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                        <button class="open-start-model bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold text-2xl px-12 py-6 rounded-2xl shadow-2xl hover:scale-105 transition transform">
+                        <button class="open-start-model bg-yellow-400 hover:bg-yellow-400 text-blue-900 font-bold text-4xl px-16 py-6 rounded-2xl shadow-2xl hover:scale-105 transition transform">
                             Start Now!
                         </button>
                     </div>
@@ -136,7 +136,7 @@
             </div>
         </header>
 
-        <!-- ========== WHY UAE - HORIZONTAL SCROLLING CARDS (ONLY ONE SECTION) ========== -->
+        <!-- ========== WHY UAE - HORIZONTAL SCROLLING CARDS ========== -->
         <section class="py-20 bg-gradient-to-b from-white to-blue-50">
             <div class="container mx-auto px-6">
                 <!-- Section Header -->
@@ -149,15 +149,15 @@
                 
                 <!-- Horizontal Scrolling Container -->
                 <div class="relative">
-                    <!-- Left Scroll Button -->
-                    <button id="scroll-left" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 -ml-4 md:block hover:bg-blue-100">
+                    <!-- Left Scroll Button - FIXED: Added hidden class -->
+                    <button id="scroll-left" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 -ml-4 hidden md:block hover:bg-blue-100">
                         <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
                     </button>
                     
-                    <!-- Right Scroll Button -->
-                    <button id="scroll-right" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 -mr-4 md:block hover:bg-blue-100">
+                    <!-- Right Scroll Button - FIXED: Added hidden class -->
+                    <button id="scroll-right" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all duration-300 -mr-4 hidden md:block hover:bg-blue-100">
                         <svg class="w-6 h-6 text-blue-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linecap="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                         </svg>
@@ -555,7 +555,7 @@
             </div>
         </div>
 
-               <!-- ========== FOOTER ========== -->
+        <!-- ========== FOOTER ========== -->
         <footer class="bg-gradient-to-b from-gray-900 to-black text-gray-300">
             <div class="container mx-auto px-6 pt-12 pb-8">
                 <!-- Google Maps Embed -->
@@ -566,10 +566,10 @@
                 
                 <!-- Footer Grid -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12">
-                    <!-- Column 1: Company Info - EXACTLY as in your screenshot -->
+                    <!-- Column 1: Company Info -->
                     <div>
                         <div class="flex flex-col gap-4 mb-6">
-                             <img src="logo.png" alt="AR Consultancy Logo" class="w-10 h-10 rounded-xl object-cover">
+                            <img src="logo.png" alt="AR Consultancy Logo" class="w-14 h-14 rounded-xl object-cover shadow-lg">
                             <div>
                                 <h3 class="text-2xl font-bold text-white tracking-tight">AR Consultancy Setup</h3>
                                 <p class="text-sm text-blue-400">Business Setup in UAE</p>
@@ -612,11 +612,11 @@
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="text-blue-400 text-xl">📞</span>
-                                <a href="tel:+971 50 123 4567" class="hover:text-white transition">+971 50 123 4567</a>
+                                <a href="tel:+971501234567" class="hover:text-white transition">+971 50 123 4567</a>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="text-blue-400 text-xl">✉️</span>
-                                <a href="mailto:bibhavpandey78@gmail.com" class="hover:text-white transition">bibhavpandey78@gmail.com</a>
+                                <a href="mailto:xyz@gmail.com" class="hover:text-white transition">xyz@gmail.com</a>
                             </li>
                             <li class="flex items-center gap-3">
                                 <span class="text-blue-400 text-xl">🕒</span>
@@ -641,11 +641,11 @@
                 </div>
             </div>
             
-            <!-- Footer Bottom - with AI copyright as in your screenshot -->
+            <!-- Footer Bottom -->
             <div class="border-t border-gray-800">
                 <div class="container mx-auto px-6 py-6 text-center text-sm">
                     <div class="flex flex-col gap-4">
-                        <p>© 2026 AI · Privacy Policy</p>
+                        <p>© 2026 AR Consultancy · Privacy Policy</p>
                         <div class="flex gap-6 justify-center">
                             <a href="#" class="hover:text-white transition">Privacy Policy</a>
                             <a href="#" class="hover:text-white transition">Terms of Service</a>
